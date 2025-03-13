@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.container {
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-family: 'Rubik Mono', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 250;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.linkList li {
+    margin-bottom: 15px; /* Adiciona espaçamento entre os links */
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #b0b0b0;
+    background: #1e1e1e;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.link:hover {
+    color: #ffffff;
+    background: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); 
+}
+
+.pessoal {
+    opacity: 0.5; 
+    font-weight: normal; 
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveAndRotate {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-50px, 30px) rotate(90deg) scale(1.1);
+    }
+    50% {
+        transform: translate(50px, -40px) rotate(180deg) scale(1);
+    }
+    75% {
+        transform: translate(-30px, -50px) rotate(270deg) scale(1.05);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+}
+
+.animatedLetters {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgba(176, 176, 176, 0.3); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveAndRotate 8s infinite alternate ease-in-out;
+    pointer-events: none; 
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .link {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .animatedLetters {
+        font-size: 4rem;
+    }
+
+    .linkList li {
+        margin-bottom: 10px; 
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .link {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .animatedLetters {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
