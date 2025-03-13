@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/campsite/static/css/main.cd336e40.css",
-    "main.js": "/campsite/static/js/main.bc89b646.js",
-    "index.html": "/campsite/index.html",
-    "main.cd336e40.css.map": "/campsite/static/css/main.cd336e40.css.map",
-    "main.bc89b646.js.map": "/campsite/static/js/main.bc89b646.js.map"
+    "main.css": "./static/css/main.cd336e40.css",
+    "main.js": "./static/js/main.bc89b646.js",
+    "index.html": "./index.html",
+    "main.cd336e40.css.map": "./static/css/main.cd336e40.css.map",
+    "main.bc89b646.js.map": "./static/js/main.bc89b646.js.map"
   },
   "entrypoints": [
     "static/css/main.cd336e40.css",
