@@ -8,7 +8,8 @@ function Campsite() {
         <div className={styles.container}>
             <div className={styles.animatedLetters}>JM</div>
 
-            <h1 className={styles.title}>Bem-vindo ao meu Campsite!</h1>
+            <h1 className={styles.title}>Bem-vindo!</h1>
+            <p className={styles.paragrafo}>CAMPSITE JOTAEME</p>
             <ul className={styles.linkList}>
                 <li>
                     <a href="https://github.com/Jotaeme00" className={styles.link}>
